@@ -15,6 +15,7 @@ import { ColocationsComponent } from './components/content/colocations/colocatio
 import { VocabularyComponent } from './components/content/vocabulary/vocabulary.component';
 import { FalseCognatesComponent } from './components/content/false-cognates/false-cognates.component';
 import { PhoneticsComponent } from './components/content/phonetics/phonetics.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PhoneticsComponent } from './components/content/phonetics/phonetics.com
     ColocationsComponent,
     VocabularyComponent,
     FalseCognatesComponent,
-    PhoneticsComponent
+    PhoneticsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

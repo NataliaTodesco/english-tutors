@@ -190,7 +190,7 @@ p {
 }
 
 .navigation-wrap.scroll-on {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -229,12 +229,12 @@ p {
 
 .approach {
     background-color: #f8f5ed;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    /* padding-bottom: .5rem; */
 }
 
 .approach-cards {
-    padding-top: 3.175rem;
+    /* padding-top: .5rem; */
 }
 
 .approach-cards .card {
@@ -330,8 +330,7 @@ p {
 
 .contact {
     background: #f8f5ed;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 .contact .our-con-info li i {

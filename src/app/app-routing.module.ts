@@ -15,15 +15,13 @@ const routes: Routes = [
   {path: '', component: HeadComponent},
   {path: 'examen', component: ExamenComponent},
   //{path: 'examen', component: ExamenComponent},
-  {path: 'content', component: ExamenComponent, children: [
-    {path: 'homophones', component: HomophonesComponent},
-    {path: 'ortography', component: OrtographyComponent},
-    {path: 'grammar', component: GrammarComponent},
-    {path: 'collocations', component: ColocationsComponent},
-    {path: 'false-cognates', component: FalseCognatesComponent},
-    {path: 'phonetics', component: PhoneticsComponent},
-    {path: 'vocabulary', component: VocabularyComponent}
-  ]},
+  {path: 'content/homophones', component: HomophonesComponent},
+  {path: 'content/ortography', component: OrtographyComponent},
+  {path: 'content/grammar', component: GrammarComponent},
+  {path: 'content/collocations', component: ColocationsComponent},
+  {path: 'content/false-cognates', component: FalseCognatesComponent},
+  {path: 'content/phonetics', component: PhoneticsComponent},
+  {path: 'content/vocabulary', component: VocabularyComponent},
   {path: 'contact', component: ContactoComponent},
   {path: '**', component: HeadComponent}
 ];
