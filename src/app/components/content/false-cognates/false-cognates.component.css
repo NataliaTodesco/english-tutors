@@ -1,0 +1,21 @@
+.card{
+    border-radius: 15px;
+}
+.titulo {
+    border-radius: 15px 15px 0 0;
+    background-color: #b13131;
+}
+
+.word{
+    border-radius: 15px;
+}
+
+.false-cognates .card{
+    max-height: 22.5rem;
+    min-height: 22.5rem;
+}
+
+.false-cognate .card{
+    max-height: 22.5rem;
+    min-height: 13rem;
+}

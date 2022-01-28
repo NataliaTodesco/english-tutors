@@ -1,10 +1,11 @@
 <nav class="navbar navbar-expand-lg navigation-wrap" [ngClass]="{'scroll-on': document.location.pathname != '/'}">
     <div class="container">
         <a class="navbar-brand" routerLink=""><img src="../../../assets/img/LOGO BLANCO.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+            (click)="mostrarREsponsive_nav = !mostrarREsponsive_nav">
             <i class=" fas fa-stream navbar-toggler-icon"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="collapse navbar-collapse" id="navbarText" [ngClass]="{ show: mostrarREsponsive_nav }">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <li class="nav-item nav-link active">
                     <a class="nav-link" routerLink="/">Inicio</a>

@@ -7,13 +7,13 @@ import { Component, Inject, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  ruta = location.pathname;
   mostrarREsponsive_menu = false;
+  mostrarREsponsive_nav = false;
 
   constructor( @Inject(DOCUMENT) public document: any) { }
 
   ngOnChange(){
-    this.ruta = location.pathname;
+
   }
 
   ngOnInit(): void {
