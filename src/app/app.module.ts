@@ -16,6 +16,7 @@ import { VocabularyComponent } from './components/content/vocabulary/vocabulary.
 import { FalseCognatesComponent } from './components/content/false-cognates/false-cognates.component';
 import { PhoneticsComponent } from './components/content/phonetics/phonetics.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TarifasComponent } from './components/tarifas/tarifas.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './components/footer/footer.component';
     VocabularyComponent,
     FalseCognatesComponent,
     PhoneticsComponent,
-    FooterComponent
+    FooterComponent,
+    TarifasComponent
   ],
   imports: [
     BrowserModule,

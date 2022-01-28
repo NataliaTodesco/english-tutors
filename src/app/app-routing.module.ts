@@ -10,11 +10,12 @@ import { PhoneticsComponent } from './components/content/phonetics/phonetics.com
 import { VocabularyComponent } from './components/content/vocabulary/vocabulary.component';
 import { ExamenComponent } from './components/examen/examen.component';
 import { HeadComponent } from './components/head/head.component';
+import { TarifasComponent } from './components/tarifas/tarifas.component';
 
 const routes: Routes = [
   {path: '', component: HeadComponent},
   {path: 'examen', component: ExamenComponent},
-  //{path: 'examen', component: ExamenComponent},
+  {path: 'tarifas', component: TarifasComponent},
   {path: 'content/homophones', component: HomophonesComponent},
   {path: 'content/ortography', component: OrtographyComponent},
   {path: 'content/grammar', component: GrammarComponent},
