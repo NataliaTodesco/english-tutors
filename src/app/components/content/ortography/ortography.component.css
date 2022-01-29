@@ -1,0 +1,15 @@
+.description{
+    color: #449fd4;
+    margin-top: .5rem;
+}
+.card{
+    border-radius: 15px;
+}
+.titulo {
+    border-radius: 15px 15px 0 0;
+    background-color: #b13131;
+}
+
+.word{
+    border-radius: 15px;
+}
