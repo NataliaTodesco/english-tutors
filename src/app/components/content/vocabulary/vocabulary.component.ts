@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vocabulary',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VocabularyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.router.navigate(['/content/vocabulary/au-pair'])
   }
 
 }

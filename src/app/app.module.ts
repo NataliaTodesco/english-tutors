@@ -17,6 +17,10 @@ import { FalseCognatesComponent } from './components/content/false-cognates/fals
 import { PhoneticsComponent } from './components/content/phonetics/phonetics.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TarifasComponent } from './components/tarifas/tarifas.component';
+import { AirportComponent } from './components/content/vocabulary/airport/airport.component';
+import { AuPairComponent } from './components/content/vocabulary/au-pair/au-pair.component';
+import { MoneyComponent } from './components/content/vocabulary/money/money.component';
+import { USvsUKComponent } from './components/content/vocabulary/usvs-uk/usvs-uk.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { TarifasComponent } from './components/tarifas/tarifas.component';
     FalseCognatesComponent,
     PhoneticsComponent,
     FooterComponent,
-    TarifasComponent
+    TarifasComponent,
+    AirportComponent,
+    AuPairComponent,
+    MoneyComponent,
+    USvsUKComponent
   ],
   imports: [
     BrowserModule,

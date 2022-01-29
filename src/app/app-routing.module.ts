@@ -7,6 +7,10 @@ import { GrammarComponent } from './components/content/grammar/grammar.component
 import { HomophonesComponent } from './components/content/homophones/homophones.component';
 import { OrtographyComponent } from './components/content/ortography/ortography.component';
 import { PhoneticsComponent } from './components/content/phonetics/phonetics.component';
+import { AirportComponent } from './components/content/vocabulary/airport/airport.component';
+import { AuPairComponent } from './components/content/vocabulary/au-pair/au-pair.component';
+import { MoneyComponent } from './components/content/vocabulary/money/money.component';
+import { USvsUKComponent } from './components/content/vocabulary/usvs-uk/usvs-uk.component';
 import { VocabularyComponent } from './components/content/vocabulary/vocabulary.component';
 import { ExamenComponent } from './components/examen/examen.component';
 import { HeadComponent } from './components/head/head.component';
@@ -22,7 +26,12 @@ const routes: Routes = [
   {path: 'content/collocations', component: ColocationsComponent},
   {path: 'content/false-cognates', component: FalseCognatesComponent},
   {path: 'content/phonetics', component: PhoneticsComponent},
-  {path: 'content/vocabulary', component: VocabularyComponent},
+  {path: 'content/vocabulary', component: VocabularyComponent, children: [
+    {path: 'au-pair', component: AuPairComponent},
+    {path: 'airport', component: AirportComponent},
+    {path: 'money', component: MoneyComponent},
+    {path: 'USvsUK', component: USvsUKComponent}
+  ]},
   {path: 'contact', component: ContactoComponent},
   {path: '**', component: HeadComponent}
 ];

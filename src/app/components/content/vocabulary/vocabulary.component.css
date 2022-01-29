@@ -1,0 +1,15 @@
+.contenedor{
+    min-height: 29.25rem;
+}
+
+.nav {
+    height: 100%;
+    font-size: larger;
+    padding: 2rem;
+}
+
+.activa {
+    background-color: #0B3251;
+    color: white;
+}
+
