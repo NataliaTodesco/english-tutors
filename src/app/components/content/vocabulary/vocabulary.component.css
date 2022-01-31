@@ -1,15 +1,24 @@
 .contenedor{
     min-height: 29.25rem;
 }
-
-.nav {
+.list-group {
     height: 100%;
+    width: 100%;
     font-size: larger;
     padding: 2rem;
+    margin-left: -1.5rem; 
+    
+}
+
+.list-group-item {
+    color: #0B3251;
+}
+
+.list-group-item:hover {
+    color: #449fd4;
 }
 
 .activa {
     background-color: #0B3251;
     color: white;
 }
-

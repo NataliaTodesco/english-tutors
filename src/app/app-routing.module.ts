@@ -13,6 +13,12 @@ import { MoneyComponent } from './components/content/vocabulary/money/money.comp
 import { USvsUKComponent } from './components/content/vocabulary/usvs-uk/usvs-uk.component';
 import { VocabularyComponent } from './components/content/vocabulary/vocabulary.component';
 import { ExamenComponent } from './components/examen/examen.component';
+import { CapitalizationComponent } from './components/content/grammar/capitalization/capitalization.component';
+import { IndefinitePronounsComponent } from './components/content/grammar/indefinite-pronouns/indefinite-pronouns.component';
+import { OrdenAdjetivosComponent } from './components/content/grammar/orden-adjetivos/orden-adjetivos.component';
+import { PeopleIsOrAreComponent } from './components/content/grammar/people-is-or-are/people-is-or-are.component';
+import { PoliceIsOrAreComponent } from './components/content/grammar/police-is-or-are/police-is-or-are.component';
+import { VerboBEComponent } from './components/content/grammar/verbo-be/verbo-be.component';
 import { HeadComponent } from './components/head/head.component';
 import { TarifasComponent } from './components/tarifas/tarifas.component';
 
@@ -22,7 +28,14 @@ const routes: Routes = [
   {path: 'tarifas', component: TarifasComponent},
   {path: 'content/homophones', component: HomophonesComponent},
   {path: 'content/ortography', component: OrtographyComponent},
-  {path: 'content/grammar', component: GrammarComponent},
+  {path: 'content/grammar', component: GrammarComponent, children: [
+    {path: 'orden-adjetivos', component: OrdenAdjetivosComponent},
+    {path: 'people-is-or-are', component: PeopleIsOrAreComponent},
+    {path: 'police-is-or-are', component: PoliceIsOrAreComponent},
+    {path: 'verboBE', component: VerboBEComponent},
+    {path: 'indefinitePronouns', component: IndefinitePronounsComponent},
+    {path: 'capitalization', component: CapitalizationComponent}
+  ]},
   {path: 'content/collocations', component: ColocationsComponent},
   {path: 'content/false-cognates', component: FalseCognatesComponent},
   {path: 'content/phonetics', component: PhoneticsComponent},

@@ -21,6 +21,12 @@ import { AirportComponent } from './components/content/vocabulary/airport/airpor
 import { AuPairComponent } from './components/content/vocabulary/au-pair/au-pair.component';
 import { MoneyComponent } from './components/content/vocabulary/money/money.component';
 import { USvsUKComponent } from './components/content/vocabulary/usvs-uk/usvs-uk.component';
+import { OrdenAdjetivosComponent } from './components/content/grammar/orden-adjetivos/orden-adjetivos.component';
+import { PeopleIsOrAreComponent } from './components/content/grammar/people-is-or-are/people-is-or-are.component';
+import { PoliceIsOrAreComponent } from './components/content/grammar/police-is-or-are/police-is-or-are.component';
+import { VerboBEComponent } from './components/content/grammar/verbo-be/verbo-be.component';
+import { IndefinitePronounsComponent } from './components/content/grammar/indefinite-pronouns/indefinite-pronouns.component';
+import { CapitalizationComponent } from './components/content/grammar/capitalization/capitalization.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +48,13 @@ import { USvsUKComponent } from './components/content/vocabulary/usvs-uk/usvs-uk
     AirportComponent,
     AuPairComponent,
     MoneyComponent,
-    USvsUKComponent
+    USvsUKComponent,
+    OrdenAdjetivosComponent,
+    PeopleIsOrAreComponent,
+    PoliceIsOrAreComponent,
+    VerboBEComponent,
+    IndefinitePronounsComponent,
+    CapitalizationComponent
   ],
   imports: [
     BrowserModule,

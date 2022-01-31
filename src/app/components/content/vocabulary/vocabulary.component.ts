@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./vocabulary.component.css']
 })
 export class VocabularyComponent implements OnInit {
+  seccion = "Au Pair";
 
   constructor(private router: Router) { }
 
