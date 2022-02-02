@@ -11,7 +11,7 @@ export class TarifasComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit(): void {
-    this.router.navigate(["/tarifas/tipos"])
+    this.router.navigate(["/tarifas/"])
   }
 
 }

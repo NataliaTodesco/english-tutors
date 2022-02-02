@@ -24,14 +24,21 @@ import { TarifasComponent } from './components/tarifas/tarifas.component';
 import { TiposComponent } from './components/tarifas/tipos/tipos.component';
 import { GrupalesComponent } from './components/tarifas/grupales/grupales.component';
 import { IndividualesComponent } from './components/tarifas/individuales/individuales.component';
+import { IntensivoComponent } from './components/tarifas/grupales/intensivo/intensivo.component';
+import { RegularComponent } from './components/tarifas/grupales/regular/regular.component';
+import { TipoComponent } from './components/tarifas/grupales/tipo/tipo.component';
 
 const routes: Routes = [
   {path: '', component: HeadComponent},
   {path: 'examen', component: ExamenComponent},
   {path: 'tarifas', component: TarifasComponent, children:[
-    {path: 'tipos', component: TiposComponent},
-    {path: 'grupales', component: GrupalesComponent},
-    {path: 'individuales', component: IndividualesComponent}
+    {path: '', component: TiposComponent},
+    {path: 'grupales', component: GrupalesComponent, children: [
+      {path: '', component: TipoComponent},
+      {path: 'intensivo', component:IntensivoComponent},
+      {path: 'regular', component: RegularComponent}
+    ]},
+    {path: 'individuales', component: IndividualesComponent},
   ]},
   {path: 'content/homophones', component: HomophonesComponent},
   {path: 'content/ortography', component: OrtographyComponent},

@@ -1,43 +1,7 @@
+<div id="modal"></div>
 <div class="heading text-center m-0">
-    <h3 style="color: #b13131; margin-bottom: -.5rem;"><b>{{"clases grupales" | uppercase}}</b></h3>
-</div>
-<div class="row approach-cards">
-    <div class="col-sm-4">
-        <div class="card">
-            <div class="card-body content p-3">
-                <h4 class="card-title" style="font-size: 59.5px;">$0.00</h4>
-                <p class="card-text card-description m-4">With supporting text below as a natural lead-in to
-                    additional content.</p>
-                <a href="#" class="btn btn-dark btn-lg btn-block mt-5">Ver mas</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card">
-            <div class="card-body content p-3">
-                <h4 class="card-title" style="font-size: 59.5px;">$0.00</h4>
-                <p class="card-text card-description m-4">With supporting text below as a natural lead-in to
-                    additional content.</p>
-                <a routerLink="./grupales" class="btn btn-dark btn-lg btn-block mt-5">Ver mas</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card">
-            <div class="card-body content p-3">
-                <h4 class="card-title" style="font-size: 59.5px;">$0.00</h4>
-                <p class="card-text card-description m-4">With supporting text below as a natural lead-in to
-                    additional content.</p>
-                <a href="#" class="btn btn-dark btn-lg btn-block mt-5">Ver mas</a>
-            </div>
-        </div>
-    </div>
+    <h3 style="color: #b13131; margin-bottom: -.5rem; font-size:2.60rem;"><b>{{"clases grupales" | uppercase}}</b></h3>
 </div>
 <div class="row">
-    <div class="col-12">
-        <button class="float-right btn btn-dark mb-3" [routerLink]="['/tarifas/tipos']">
-            <i class="bi bi-arrow-return-left"></i>
-            Volver
-        </button>
-    </div>
+    <router-outlet></router-outlet>
 </div>

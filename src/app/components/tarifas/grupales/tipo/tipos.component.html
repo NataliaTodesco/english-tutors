@@ -1,0 +1,48 @@
+<div class="approach-cards d-flex justify-content-center">
+    <div class="col-sm-5">
+        <div class="card">
+            <div class="card-body content p-3">
+                <h4 class="card-title" style="font-size: 2rem;">NIVEL INICIAL REGULAR</h4>
+                <ul class="text-left ml-4 mt-1">
+                    <label for="">PLAN REGULAR:</label>
+                    <li>Máximo de cinco estudiantes por grupo</li>
+                    <li>Total de horas: 10 horas </li>
+                    <li>Clases por semana: 2 clases</li>
+                    <li>Duración de cada clase:  1 hora</li>
+                    <li>Horario de consulta: 30 min por semana</li>
+                    <li>Abono mensual: 2750 ARS </li>
+                    <li>Abono mensual Chile, Uruguay y México: 25 USD</li>
+                </ul>
+                <p class="card-text card-description mb-3">*Las clases se pueden personalizar si el grupo así lo requiere. Se debe informar su pedido de realización de un nuevo plan de estudios en la clase de prueba.  </p> 
+                <a [routerLink]="['/tarifas/grupales/regular']"  class="btn btn-dark btn-lg btn-block mt-3" style="color: white">Ver mas</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-5">
+        <div class="card">
+            <div class="card-body content p-3">
+                <h4 class="card-title" style="font-size: 2rem;">NIVEL INICIAL INTENSIVO</h4>
+                <ul class="text-left ml-4 mt-1">
+                    <label for="">PLAN INTENSIVO:</label>
+                    <li>Máximo de cinco estudiantes por grupo</li>
+                    <li>Total de horas: 20 horas </li>
+                    <li>Clases por semana: 2 clases</li>
+                    <li>Duración de cada clase:  2 horas</li>
+                    <li>Horario de consulta: 1 hora por semana</li>
+                    <li>Abono mensual: 5280 ARS</li>
+                    <li>Abono mensual Chile, Uruguay y México: 45 USD</li>
+                </ul>
+                <p class="card-text card-description mb-3">*Las clases se pueden personalizar si el grupo así lo requiere. Se debe informar su pedido de realización de un nuevo plan de estudios en la clase de prueba.</p> 
+                <a [routerLink]="['/tarifas/grupales/intensivo']" class="btn btn-dark btn-lg btn-block mt-3" style="color: white">Ver mas</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-top: -.7rem;">
+    <div class="col-12">
+        <button class="float-right btn btn-dark mb-3" [routerLink]="['/tarifas/']">
+            <i class="bi bi-arrow-return-left"></i>
+            Volver
+        </button>
+    </div>
+</div>

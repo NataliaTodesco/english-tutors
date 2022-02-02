@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grupales.component.css']
 })
 export class GrupalesComponent implements OnInit {
-
+  mostrar = false;
+  
   constructor() { }
 
   ngOnInit(): void {

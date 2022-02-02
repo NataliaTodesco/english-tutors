@@ -30,6 +30,9 @@ import { CapitalizationComponent } from './components/content/grammar/capitaliza
 import { GrupalesComponent } from './components/tarifas/grupales/grupales.component';
 import { IndividualesComponent } from './components/tarifas/individuales/individuales.component';
 import { TiposComponent } from './components/tarifas/tipos/tipos.component';
+import { IntensivoComponent } from './components/tarifas/grupales/intensivo/intensivo.component';
+import { TipoComponent } from './components/tarifas/grupales/tipo/tipo.component';
+import { RegularComponent } from './components/tarifas/grupales/regular/regular.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +63,10 @@ import { TiposComponent } from './components/tarifas/tipos/tipos.component';
     CapitalizationComponent,
     GrupalesComponent,
     IndividualesComponent,
-    TiposComponent
+    TiposComponent,
+    TipoComponent,
+    IntensivoComponent,
+    RegularComponent
   ],
   imports: [
     BrowserModule,
