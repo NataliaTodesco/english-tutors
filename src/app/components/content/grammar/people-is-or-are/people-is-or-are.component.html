@@ -1,3 +1,4 @@
+<div id="modal" class="text-center"></div>
 <div class="container m-0 approach-cards mt-5">
     <p class="description">Elige las oraciones que creas están escritas correctamente:</p>
       <div class="list-group m-2" *ngFor="let oracion of oraciones; let i = index">
@@ -17,9 +18,33 @@
         <div class="col text-center">
             <button class="btn btn-dark px-4 py-3 mt-4 mb-5" (click)="click()" [disabled]="deshabilitar">{{accion}}</button> 
             <div class="float-right mt-3" *ngIf="corregir" style="font-size: larger;">
-                <i class="bi bi-chat-right-text-fill text-info" style="cursor: pointer;" *ngIf="result < 10" (click)="resultado()"></i>
+                <i class="bi bi-chat-right-text-fill text-info" style="cursor: pointer;" *ngIf="result < 10" (click)="correccion = true"></i>
                 {{result}}/10
             </div>
           </div>
       </div>
 </div>
+  
+  <!-- Modal -->
+  <div class="moddal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true" *ngIf="correccion">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title m-0 p-0" id="exampleModalLabel">Correccion:</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"  (click)="correccion = false">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Este es un error muy común entre los hablantes del español. People significa “gente”.
+            En español se usa con un verbo en singular. Ejemplo: La gente es muy desconfiada hoy
+            en día. Sin embargo, en inglés la palabra “people” usa el verbo en plural. Ejemplo: People
+            ARE always complaining about their jobs. El verbo Be “are” es usado para sujetos
+            plurales como “you, we, they, Lucy and Luckas, the kids, Children, my sisters, etc”.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="correccion = false">Entendido!</button>
+        </div>
+      </div>
+    </div>
+  </div>

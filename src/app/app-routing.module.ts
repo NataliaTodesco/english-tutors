@@ -21,11 +21,18 @@ import { PoliceIsOrAreComponent } from './components/content/grammar/police-is-o
 import { VerboBEComponent } from './components/content/grammar/verbo-be/verbo-be.component';
 import { HeadComponent } from './components/head/head.component';
 import { TarifasComponent } from './components/tarifas/tarifas.component';
+import { TiposComponent } from './components/tarifas/tipos/tipos.component';
+import { GrupalesComponent } from './components/tarifas/grupales/grupales.component';
+import { IndividualesComponent } from './components/tarifas/individuales/individuales.component';
 
 const routes: Routes = [
   {path: '', component: HeadComponent},
   {path: 'examen', component: ExamenComponent},
-  {path: 'tarifas', component: TarifasComponent},
+  {path: 'tarifas', component: TarifasComponent, children:[
+    {path: 'tipos', component: TiposComponent},
+    {path: 'grupales', component: GrupalesComponent},
+    {path: 'individuales', component: IndividualesComponent}
+  ]},
   {path: 'content/homophones', component: HomophonesComponent},
   {path: 'content/ortography', component: OrtographyComponent},
   {path: 'content/grammar', component: GrammarComponent, children: [

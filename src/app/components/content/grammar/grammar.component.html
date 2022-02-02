@@ -1,5 +1,5 @@
 <div class="row contenedor approach" style="padding-top: 0;">
-    <div class="col-3">
+    <div class="col-lg-3">
       <div class="nav list-group flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <a class="list-group-item activa" [routerLink]="['orden-adjetivos']" routerLinkActive="activa" (click)="seccion = 'Orden de Adjetivos'">Orden de Adjetivos</a>
         <a class="list-group-item" [routerLink]="['people-is-or-are']" routerLinkActive="activa" (click)="seccion = 'Common Mistakes: People is or are?'">Common Mistakes: People is or are?</a>
@@ -9,14 +9,14 @@
         <a class="list-group-item" routerLink="capitalization" routerLinkActive="activa" (click)="seccion = 'Capitalization'">Capitalization</a>
       </div>
     </div>
-    <div class="col-9 approach">
-      <div class="heading text-center" style="margin-left: -4rem;">
+    <div class="col-lg-9 approach">
+      <div class="heading text-center">
         <h5 style="margin-bottom: -.5rem;">Content</h5>
         <h2 style="margin-bottom: -1rem;">GRAMMAR</h2>
         <h3 style="margin-bottom: -2rem; color: #b13131;"><b>{{seccion | uppercase}}</b></h3>
       </div>
       <div class="container">
-        <div class="tab-content" id="v-pills-tabContent" style="margin-left: -4rem;">
+        <div class="tab-content" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <router-outlet></router-outlet>
           </div>

@@ -25,6 +25,7 @@ export class PeopleIsOrAreComponent implements OnInit {
   m = 0;
   result = 0;
   deshabilitar = true;
+  correccion = false;
 
   constructor() { }
 
@@ -67,14 +68,8 @@ export class PeopleIsOrAreComponent implements OnInit {
         {oracion: "Local people is trying to attract more tourists to the town.", estado: false, correcta: false, checked: false, respuesta: "false"},
         {oracion: "People are hungry. ", estado: false, correcta: true, checked: false, respuesta: "false"}
       ]
-    }
-  }
 
-  resultado(){
-    console.log('Este es un error muy común entre los hablantes del español. People significa “gente”. '+
-    +'En español se usa con un verbo en singular. Ejemplo: La gente es muy desconfiada hoy '
-    +'en día. Sin embargo, en inglés la palabra “people” usa el verbo en plural. Ejemplo: People '
-    +'ARE always complaining about their jobs. El verbo Be “are” es usado para sujetos '
-    +'plurales como “you, we, they, Lucy and Luckas, the kids, Children, my sisters, etc”.')
+      this.correccion = false;
+    }
   }
 }

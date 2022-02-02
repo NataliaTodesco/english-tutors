@@ -27,6 +27,9 @@ import { PoliceIsOrAreComponent } from './components/content/grammar/police-is-o
 import { VerboBEComponent } from './components/content/grammar/verbo-be/verbo-be.component';
 import { IndefinitePronounsComponent } from './components/content/grammar/indefinite-pronouns/indefinite-pronouns.component';
 import { CapitalizationComponent } from './components/content/grammar/capitalization/capitalization.component';
+import { GrupalesComponent } from './components/tarifas/grupales/grupales.component';
+import { IndividualesComponent } from './components/tarifas/individuales/individuales.component';
+import { TiposComponent } from './components/tarifas/tipos/tipos.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import { CapitalizationComponent } from './components/content/grammar/capitaliza
     PoliceIsOrAreComponent,
     VerboBEComponent,
     IndefinitePronounsComponent,
-    CapitalizationComponent
+    CapitalizationComponent,
+    GrupalesComponent,
+    IndividualesComponent,
+    TiposComponent
   ],
   imports: [
     BrowserModule,

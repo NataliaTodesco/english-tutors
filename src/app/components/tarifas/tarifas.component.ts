@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tarifas',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarifasComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+    this.router.navigate(["/tarifas/tipos"])
   }
 
 }
