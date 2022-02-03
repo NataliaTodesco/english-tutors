@@ -60,7 +60,7 @@ const routes: Routes = [
     {path: 'USvsUK', component: USvsUKComponent}
   ]},
   {path: 'contact', component: ContactoComponent},
-  {path: '**', component: HeadComponent}
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
