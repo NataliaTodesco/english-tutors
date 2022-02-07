@@ -45,11 +45,12 @@ export class PeopleIsOrAreComponent implements OnInit {
       this.c = 0;
       this.m = 0;
       this.oraciones.forEach(oracion => {
-        if (oracion.checked && oracion.correcta) this.c++;
-        if (oracion.checked && oracion.correcta == false) this.m++;
+        if (oracion.checked && oracion.correcta) this.c += 1.66;
+        if (oracion.checked && oracion.correcta == false) this.m += 2.5;
       });
 
-      this.result = Math.round(this.c * 10 / 6);
+      if ((this.c - this.m) < 0) this.result = 0
+      else this.result = Math.round(this.c - this.m);
     }
     else {
       this.accion = "CORREGIR / CHECK RESULTS";

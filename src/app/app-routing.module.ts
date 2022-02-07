@@ -27,6 +27,7 @@ import { IndividualesComponent } from './components/tarifas/individuales/individ
 import { IntensivoComponent } from './components/tarifas/grupales/intensivo/intensivo.component';
 import { RegularComponent } from './components/tarifas/grupales/regular/regular.component';
 import { TipoComponent } from './components/tarifas/grupales/tipo/tipo.component';
+import { RecursosComponent } from './components/recursos/recursos.component';
 
 const routes: Routes = [
   {path: '', component: HeadComponent},
@@ -60,6 +61,7 @@ const routes: Routes = [
     {path: 'USvsUK', component: USvsUKComponent}
   ]},
   {path: 'contact', component: ContactoComponent},
+  {path: 'recursos', component: RecursosComponent},
   {path: '**', redirectTo: ''}
 ];
 
