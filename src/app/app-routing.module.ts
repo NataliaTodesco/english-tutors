@@ -28,6 +28,7 @@ import { IntensivoComponent } from './components/tarifas/grupales/intensivo/inte
 import { RegularComponent } from './components/tarifas/grupales/regular/regular.component';
 import { TipoComponent } from './components/tarifas/grupales/tipo/tipo.component';
 import { RecursosComponent } from './components/recursos/recursos.component';
+import { ContentComponent } from './components/content/content.component';
 
 const routes: Routes = [
   {path: '', component: HeadComponent},
@@ -41,6 +42,7 @@ const routes: Routes = [
     ]},
     {path: 'individuales', component: IndividualesComponent},
   ]},
+  {path: 'content', component: ContentComponent},
   {path: 'content/homophones', component: HomophonesComponent},
   {path: 'content/ortography', component: OrtographyComponent},
   {path: 'content/grammar', component: GrammarComponent, children: [
