@@ -34,6 +34,7 @@ import { IntensivoComponent } from './components/tarifas/grupales/intensivo/inte
 import { TipoComponent } from './components/tarifas/grupales/tipo/tipo.component';
 import { RegularComponent } from './components/tarifas/grupales/regular/regular.component';
 import { RecursosComponent } from './components/recursos/recursos.component';
+import { ContenidoComponent } from './components/contenido/contenido.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { RecursosComponent } from './components/recursos/recursos.component';
     TipoComponent,
     IntensivoComponent,
     RegularComponent,
-    RecursosComponent
+    RecursosComponent,
+    ContenidoComponent
   ],
   imports: [
     BrowserModule,

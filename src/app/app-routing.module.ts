@@ -29,6 +29,7 @@ import { RegularComponent } from './components/tarifas/grupales/regular/regular.
 import { TipoComponent } from './components/tarifas/grupales/tipo/tipo.component';
 import { RecursosComponent } from './components/recursos/recursos.component';
 import { ContentComponent } from './components/content/content.component';
+import { ContenidoComponent } from './components/contenido/contenido.component';
 
 const routes: Routes = [
   {path: '', component: HeadComponent},
@@ -42,7 +43,7 @@ const routes: Routes = [
     ]},
     {path: 'individuales', component: IndividualesComponent},
   ]},
-  {path: 'content', component: ContentComponent},
+  {path: 'content', component: ContenidoComponent},
   {path: 'content/homophones', component: HomophonesComponent},
   {path: 'content/ortography', component: OrtographyComponent},
   {path: 'content/grammar', component: GrammarComponent, children: [
