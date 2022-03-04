@@ -1,6 +1,8 @@
 .description{
     color: #449fd4;
     margin-top: .5rem;
+    text-align: justify;
+    text-indent: 40px;
 }
 .card{
     border-radius: 15px;
@@ -12,4 +14,12 @@
 
 .word{
     border-radius: 15px;
+}
+
+.p button{
+    border: none;
+    text-decoration: none;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
 }

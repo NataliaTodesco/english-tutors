@@ -1,12 +1,15 @@
 <nav class="navbar navbar-expand-lg navigation-wrap" [ngClass]="{'scroll-on': document.location.pathname != '/'}">
     <div class="container">
-        <a class="navbar-brand" routerLink=""><img src="../../../assets/img/LOGO BLANCO.png"></a>
+        <a class="navbar-brand" routerLink="" >
+            <img class="logo-height" *ngIf="document.location.pathname == '/'" src="../../../assets/img/LOGO EXTENDIDO BLANCO(2).png">
+            <img *ngIf="document.location.pathname != '/'" src="../../../assets/img/LOGO BLANCO.png">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
             (click)="mostrarREsponsive_nav = !mostrarREsponsive_nav">
             <i class=" fas fa-stream navbar-toggler-icon"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarText" [ngClass]="{ show: mostrarREsponsive_nav }">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0"  [ngClass]="{'marginTop': document.location.pathname == '/'}">
                 <li class="nav-item nav-link active">
                     <a class="nav-link" routerLink="/">Inicio</a>
                 </li>
@@ -17,7 +20,7 @@
                     <a class="nav-link" routerLink="/tarifas">Honorarios</a>
                 </li>
                 <li class="nav-item nav-link active">
-                    <a class="nav-link" routerLink="/content">Content</a>
+                    <a class="nav-link" routerLink="/content">Contenido</a>
                 </li>
                 <!-- <li class="nav-item nav-link dropdown" (click)="mostrarREsponsive_menu = !mostrarREsponsive_menu">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

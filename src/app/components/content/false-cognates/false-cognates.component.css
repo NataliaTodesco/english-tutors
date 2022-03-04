@@ -11,11 +11,15 @@
 }
 
 .false-cognates .card{
-    max-height: 22.5rem;
     min-height: 22.5rem;
 }
 
 .false-cognate .card{
-    max-height: 22.5rem;
     min-height: 13rem;
+}
+.description{
+    color: #449fd4;
+    margin-top: .5rem;
+    text-align: justify;
+    text-indent: 40px;
 }

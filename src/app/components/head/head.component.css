@@ -1,0 +1,9 @@
+.inicio-sub{
+    font-size: 30px;
+}
+
+@media(max-width:420px){
+    .inicio-sub{
+        font-size: 18px;
+    }
+}

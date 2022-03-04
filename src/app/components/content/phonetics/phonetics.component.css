@@ -9,3 +9,9 @@
 .word{
     border-radius: 15px;
 }
+.description{
+    color: #449fd4;
+    margin-top: .5rem;
+    text-align: justify;
+    text-indent: 40px;
+}

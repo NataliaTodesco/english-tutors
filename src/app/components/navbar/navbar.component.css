@@ -1,0 +1,17 @@
+.logo-height{
+    margin-top: 1.5rem;
+}
+
+.marginTop{
+    margin-top: -2.3rem;
+}
+
+@media(max-width:420px){
+    .logo-height{
+        margin-top: 0;
+        height: 3rem;
+    }
+    .marginTop{
+        margin-top: 0;
+    }
+}
