@@ -8,12 +8,12 @@
 
 img{
     height: 50%;
-    width: 90%;
+    width: 80%;
     position: relative;
     overflow: hidden;
+    margin-top: -0.9375rem;
     margin-left: 0.9375rem;
     margin-right: 0.9375rem;
-    margin-top: -0.975rem;
     border-radius: 0.575rem;
     box-shadow: 0 0.5625rem 1.875rem -0.625rem rgba(221, 218, 210, 0.5);
 }

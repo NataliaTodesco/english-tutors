@@ -30,6 +30,7 @@ import { TipoComponent } from './components/tarifas/grupales/tipo/tipo.component
 import { RecursosComponent } from './components/recursos/recursos.component';
 import { ContentComponent } from './components/content/content.component';
 import { ContenidoComponent } from './components/contenido/contenido.component';
+import { TransportComponent } from './components/content/vocabulary/transport/transport.component';
 
 const routes: Routes = [
   {path: '', component: HeadComponent},
@@ -61,7 +62,8 @@ const routes: Routes = [
     {path: 'au-pair', component: AuPairComponent},
     {path: 'airport', component: AirportComponent},
     {path: 'money', component: MoneyComponent},
-    {path: 'USvsUK', component: USvsUKComponent}
+    {path: 'USvsUK', component: USvsUKComponent},
+    {path: 'transport', component: TransportComponent}
   ]},
   {path: 'contact', component: ContactoComponent},
   {path: 'recursos', component: RecursosComponent},

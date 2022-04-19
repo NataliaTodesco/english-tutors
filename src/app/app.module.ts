@@ -35,6 +35,7 @@ import { TipoComponent } from './components/tarifas/grupales/tipo/tipo.component
 import { RegularComponent } from './components/tarifas/grupales/regular/regular.component';
 import { RecursosComponent } from './components/recursos/recursos.component';
 import { ContenidoComponent } from './components/contenido/contenido.component';
+import { TransportComponent } from './components/content/vocabulary/transport/transport.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { ContenidoComponent } from './components/contenido/contenido.component';
     IntensivoComponent,
     RegularComponent,
     RecursosComponent,
-    ContenidoComponent
+    ContenidoComponent,
+    TransportComponent
   ],
   imports: [
     BrowserModule,
