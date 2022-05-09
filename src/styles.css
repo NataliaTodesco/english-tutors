@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
 *,
 *::before {
     -webkit-box-sizing: border-box;
@@ -66,7 +68,7 @@ h1 {
     font-weight: 900;
     margin-bottom: 2rem;
     color: #31bde7;
-   
+
 }
 
 h1 span {
@@ -207,7 +209,7 @@ p {
 /* top section */
 
 .top-wrapper {
-    background:linear-gradient(rgb(0,0,0,.6),rgb(0,0,0,.3)), url("./assets/img/HEAD-BG.jpg");
+    background: linear-gradient(rgb(0, 0, 0, .6), rgb(0, 0, 0, .3)), url("./assets/img/HEAD-BG.jpg");
     width: 100%;
     min-height: 100vh;
     background-size: cover;
@@ -278,7 +280,7 @@ p {
     text-align: center;
 }
 
-.approach-cards .card .content h4{
+.approach-cards .card .content h4 {
     /* color: #b13131; */
     margin-bottom: -0.5rem;
 }
@@ -289,7 +291,7 @@ p {
     text-align: justify;
 }
 
-.approach-cards .card .content .btn{
+.approach-cards .card .content .btn {
     background-color: #b13131;
     border-color: #b13131;
 }
@@ -409,23 +411,27 @@ p {
     color: #b13131;
 }
 
-@media(max-width:420px){
-    h2{
+@media(max-width:420px) {
+    h2 {
         font-size: 1.5rem;
     }
+
     h1 {
         font-size: 3rem;
     }
-    .logo-height{
+
+    .logo-height {
         margin-top: 0;
         height: 1rem;
     }
 }
-@media(max-width:992px){
+
+@media(max-width:992px) {
     .navigation-wrap {
         background-color: #0B3251;
     }
-    .top-wrapper{
+
+    .top-wrapper {
         height: 100%;
     }
 }
