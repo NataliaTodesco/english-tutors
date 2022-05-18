@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./grammar.component.css']
 })
 export class GrammarComponent implements OnInit {
-  seccion = "Orden de Adjetivos";
+  // seccion = "Orden de Adjetivos";
+  seccion = "Common Mistakes: People is or are?";
 
   constructor(private router: Router) { }
 
