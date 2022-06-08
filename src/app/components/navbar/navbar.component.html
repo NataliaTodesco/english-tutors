@@ -1,26 +1,27 @@
 <nav class="navbar navbar-expand-lg navigation-wrap" [ngClass]="{'scroll-on': document.location.pathname != '/'}">
-    <div class="container">
-        <a class="navbar-brand" routerLink="" >
-            <img class="logo-height" *ngIf="document.location.pathname == '/'" src="../../../assets/img/LOGO EXTENDIDO BLANCO(2).png">
-            <img *ngIf="document.location.pathname != '/'" src="../../../assets/img/LOGO BLANCO.png">
+    <div class="container-fluid">
+        <a class="navbar-brand" >
+            <!-- <img class="logo-height" *ngIf="document.location.pathname == '/'" src="../../../assets/img/LOGO EXTENDIDO BLANCO(2).png"> -->
+            <img class="logo-height" src="../../../assets/img/logo azul horizontal.png">
+            <!-- <img *ngIf="document.location.pathname != '/'" src="../../../assets/img/LOGO BLANCO.png"> -->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
             (click)="mostrarREsponsive_nav = !mostrarREsponsive_nav">
             <i class=" fas fa-stream navbar-toggler-icon"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarText" [ngClass]="{ show: mostrarREsponsive_nav }">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0"  [ngClass]="{'marginTop': document.location.pathname == '/'}">
+            <ul class="navbar-nav ml-auto mb-lg-0 inicio">
                 <li class="nav-item nav-link active">
-                    <a class="nav-link" routerLink="/">Inicio</a>
+                    <a class="nav-link" routerLink="/" routerLinkActive="active-link">Inicio <div *ngIf="document.location.pathname == '/'" class="linea"></div></a>
                 </li>
                 <li class="nav-item nav-link active">
-                    <a class="nav-link" routerLink="/examen">Examen</a>
+                    <a class="nav-link" routerLink="/examen" routerLinkActive="active-link">Examen <div class="linea"></div></a>
                 </li>
                 <li class="nav-item nav-link active">
-                    <a class="nav-link" routerLink="/tarifas">Honorarios</a>
+                    <a class="nav-link" routerLink="/tarifas" routerLinkActive="active-link">Honorarios <div class="linea"></div></a>
                 </li>
                 <li class="nav-item nav-link active">
-                    <a class="nav-link" routerLink="/content">Contenido</a>
+                    <a class="nav-link" routerLink="/content" routerLinkActive="active-link">Contenido <div class="linea"></div></a>
                 </li>
                 <!-- <li class="nav-item nav-link dropdown" (click)="mostrarREsponsive_menu = !mostrarREsponsive_menu">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,8 +37,8 @@
                         <a class="dropdown-item" routerLink="/content/phonetics">Phonetics</a>
                     </div>
                 </li> -->
-                <li class="nav-item nav-link active">
-                    <a class="nav-link" routerLink="/contact">Contacto</a>
+                <li class="nav-item nav-link active" >
+                    <a class="nav-link" routerLink="/contact" routerLinkActive="active-link">Contacto <div class="linea"></div></a>
                 </li>
 
             </ul>

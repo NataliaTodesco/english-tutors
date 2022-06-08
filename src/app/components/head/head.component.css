@@ -1,9 +1,93 @@
+.main-wrapper .container-fluid .left-wrapper{
+    padding-left: 100px;
+    padding-bottom: 90px;
+}
+
 .inicio-sub{
     font-size: 30px;
 }
 
-@media(max-width:420px){
+.main-btn {
+    size: 45px 192px;
+    background-color: #000a97;
+    border-color: #000a97;
+    color: #f8f5ed;
+    border-radius: 55px;
+    font-size: 25pt;
+    font-weight: 600;
+    font-family: var(--primary-font);
+}
+
+.main-btn:hover {
+    background-color: #59abc6;
+    color: var(--white-color);
+    border-color: #59abc6;
+}
+
+h5{
+    text-transform: none;
+    max-width: 400px;
+    font-size: 35pt;
+    color: #408de9;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+@media(max-width:920px){
     .inicio-sub{
         font-size: 18px;
+    }
+    .main-wrapper .container-fluid .left-wrapper{
+        padding-left: 10px;
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width:1366px){
+    h5{
+        max-width: 300px;
+        font-size: 25pt;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    h1{
+        font-size: 45pt;
+        max-width: 600px;
+        margin-top: 2%;
+    }
+    .main-btn {
+        size: 25px 172px;
+        border-radius: 55px;
+        font-size: 15pt;
+    }
+    .main-wrapper .container-fluid .left-wrapper{
+        padding-bottom: 50px;
+    }
+} 
+
+@media (max-width:600px){
+    h5{
+        max-width: 200px;
+        font-size: 19pt;
+        margin-top: 6%;
+        margin-bottom: 10%;
+    }
+
+    h1{
+        font-size: 23pt;
+        max-width: 100%;
+        margin-top: -20px;
+    }
+
+    .main-btn {
+        size: 40px 108px;
+        border-radius: 55px;
+        font-size: 10pt;
+    }
+    .main-wrapper .container-fluid .left-wrapper{
+        padding-bottom: 20px;
+        padding-left: 20px;
     }
 }

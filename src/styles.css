@@ -64,11 +64,12 @@ body {
 }
 
 h1 {
-    font-size: 4.5rem;
-    font-weight: 900;
-    margin-bottom: 2rem;
-    color: #31bde7;
-
+    max-width: 800px;
+    color: #000A97;
+    font-size: 60pt;
+    font-weight: bold;
+    font-family: var(--primary-font);
+    margin-top: 4%;
 }
 
 h1 span {
@@ -148,7 +149,7 @@ p {
 }
 
 .navbar-toggler-icon {
-    color: white;
+    color: #000A97;
 }
 
 .navbar.top ul li a {
@@ -200,8 +201,10 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    background: #0B3251;
-    box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.09);
+    margin-top: -1rem;
+    margin-bottom: 0;
+    background: #f8f5ed;
+    /* box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.09); */
     transition: all .15s ease-in-out 0s;
 }
 
@@ -209,11 +212,13 @@ p {
 /* top section */
 
 .top-wrapper {
-    background: linear-gradient(rgb(0, 0, 0, .6), rgb(0, 0, 0, .3)), url("./assets/img/HEAD-BG.jpg");
+    /* background: linear-gradient(rgba(213, 0, 0, 0.8), rgba(3, 2, 73, 0.8) 60%), url("./assets/img/palace-530055_1920.jpg") ; */
+    background: url(./assets/img/fondo.jpg);
     width: 100%;
     min-height: 100vh;
     background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center;
     opacity: 1;
 }
 
@@ -411,27 +416,35 @@ p {
     color: #b13131;
 }
 
-@media(max-width:420px) {
-    h2 {
-        font-size: 1.5rem;
+
+
+@media(max-width:992px) {
+    .navigation-wrap {
+        background-color: #ebeef5;
     }
 
-    h1 {
-        font-size: 3rem;
+    .top-wrapper {
+        height: 100%;
+    }
+}
+
+@media(max-width:620px) {
+    h2 {
+        font-size: 1.5rem;
     }
 
     .logo-height {
         margin-top: 0;
         height: 1rem;
     }
-}
-
-@media(max-width:992px) {
-    .navigation-wrap {
-        background-color: #0B3251;
-    }
 
     .top-wrapper {
-        height: 100%;
+        background: url(./assets/img/v21.jpg);
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
     }
 }
