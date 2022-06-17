@@ -19,6 +19,14 @@
     padding-top: 0;
 }
 
+.navbar-toggler{
+    margin-left: 0;
+    margin-right: 3%;
+    background-color: white;
+    padding: 0 10px;
+    padding-top: 10px;
+}
+
 .inicio{
     margin-top: -2rem;
     padding: 0;
@@ -33,10 +41,15 @@
     margin-left: 85px;
 }
 
+.scroll-on li a{
+    margin-top: 2rem;
+}
+
 @media(max-width:920px){
     .logo-height{
         margin-top: 0;
         height: 3rem;
+        margin-bottom: 0;
     }
     .marginTop{
         margin-top: 0;
@@ -52,6 +65,9 @@
         padding: 0;
         margin-right: 100px;
     }
+    .scroll-on li a{
+        margin-top: 0;
+    }
 }
 
 @media(max-width:420px){
@@ -63,5 +79,8 @@
 @media screen and (max-width:1366px){
     .inicio li a {
         font-size: 14pt;
+    }
+    .logo-height{
+        margin-bottom: 1rem;
     }
 }
